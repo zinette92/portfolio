@@ -1,0 +1,29 @@
+[
+  {
+    "id": "project1",
+    "cover": "/assets/Projects/booki_cover.webp",
+    "title": "Booki",
+    "presentation": "presentation",
+    "description": "Projet réalisé dans le cadre de ma formation.",
+    "skills": ["HTML", "CSS"],
+    "link": "https://zinette92-booki.vercel.app/"
+  },
+  {
+    "id": "project2",
+    "cover": "/assets/Projects/kasa_cover.png",
+    "presentation": "presentation",
+    "description": "Projet réalisé dans le cadre de ma formation.",
+    "rating": "5",
+    "skills": ["REACT", "Javascript", "SASS"],
+    "link": "https://zinette92-kasa.vercel.app/"
+  },
+  {
+    "id": "project3",
+    "cover": "/assets/Projects/booki_cover.webp",
+    "presentation": "presentation",
+    "description": "Projet réalisé dans le cadre de ma formation.",
+    "rating": "5",
+    "skills": ["REACT", "Javascript", "SASS"],
+    "link": "https://zinette92-nina-carducci.vercel.app/"
+  }
+]

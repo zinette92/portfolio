@@ -1,29 +1,29 @@
 import React from "react";
-import { useState } from 'react'
+import { useState } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 export default function Header() {
-    
-    const [transparency, setTransparency] = useState(true);
-    const changeTransparency = () => {
-      if(window.scrollY >= 440) {
-        setTransparency(false);
-      }
-      else {
-        setTransparency(true);
-      }
+  const [transparency, setTransparency] = useState(true);
+  const changeTransparency = () => {
+    if (window.scrollY >= 440) {
+      setTransparency(false);
+    } else {
+      setTransparency(true);
     }
-    const scrollToTop = () => {
-        scroll.scrollToTop({ duration: 500, smooth: true });
-      };
+  };
+  const scrollToTop = () => {
+    scroll.scrollToTop({ duration: 500, smooth: true });
+  };
 
-      window.addEventListener('scroll', changeTransparency);
-      
+  window.addEventListener("scroll", changeTransparency);
+
   return (
-<header className={`fixed top-0 left-0 w-full text-white ${transparency ? 'bg-transparent' : 'bg-gray-800'}`}>
-      <div className=" container mx-auto py-4 px-4">
-        <div className="flex justify-end items-center h-8">
-          <div className="hidden md:block mr-10">
+    <header
+      className={`fixed left-0 top-0 z-50 w-full text-white ${transparency ? "bg-transparent" : "bg-gray-800"}`}
+    >
+      <div className=" container mx-auto px-4 py-4">
+        <div className="flex h-8 items-center justify-end">
+          <div className="mr-10 hidden md:block">
             <nav>
               <ul className="flex space-x-8">
                 <li>
@@ -39,23 +39,24 @@ export default function Header() {
                   </Link>
                 </li>
                 <li>
-                  <Link activeClass="active"
+                  <Link
+                    activeClass="active"
                     to="skills"
                     spy={true}
                     smooth={true}
                     duration={500}
                     offset={-56}
-                    >
+                  >
                     Compétences
                   </Link>
                 </li>
                 <li>
-                  <Link to="#mon-composant" classNameName="hover:text-gray-300">
+                  <Link to="about" className="hover:text-gray-300">
                     A propos
                   </Link>
                 </li>
                 <li>
-                  <Link to="#mon-composant" classNameName="hover:text-gray-300">
+                  <Link to="contact" className="hover:text-gray-300">
                     Contact
                   </Link>
                 </li>

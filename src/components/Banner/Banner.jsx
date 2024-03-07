@@ -5,7 +5,7 @@ export default function Intro(props) {
   return (
     <section
       id="banner"
-      className="flex h-[500px] items-center justify-center  bg-[url('../assets/image_banner.webp')] bg-cover bg-no-repeat"
+      className="flex h-screen items-center justify-center  bg-[url('../assets/Banner/image_banner.webp')] bg-cover bg-no-repeat"
     >
       <div className="flex flex-col items-center justify-center gap-12">
         <div className="flex flex-col items-center justify-center gap-2">

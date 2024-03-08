@@ -1,19 +1,42 @@
 import React from "react";
+import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import Modal from "../Modal/Modal";
 
 export default function Project(props) {
+  const [isHovered, setIsHovered] = useState(false);
+  const [openModal, setOpenModal] = useState(false);
+
   return (
-    <div className="transform-gpu transition-transform hover:scale-105">
-      <a href={`${props.projectLink}`} target="_blank">
+    <>
+      <div
+        className="transform-gpu transition-transform hover:scale-105"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+        onClick={() => setOpenModal(true)}
+      >
+        {/* <a href={`${props.projectLink}`} target="_blank" rel="noreferrer"> */}
         <img
           src={process.env.PUBLIC_URL + props.projectCover}
           alt={props.projectTitle}
           className="h-96 w-96 rounded object-cover shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]"
         />
-        <div className="absolute inset-0 flex flex-col items-center justify-center bg-blue-500 opacity-0 transition-opacity hover:opacity-50">
-          <h3 className="mb-2 text-lg font-bold text-red-900">Booki</h3>
-          <p className="text-black">Voici Booki</p>
+        <div
+          className={`${isHovered ? "visible" : "hidden"} absolute inset-0 flex flex-col items-center rounded bg-blue-700 bg-opacity-90  px-4 py-4 transition-opacity`}
+        >
+          <h3 className="mb-2 text-2xl font-bold text-white">Booki</h3>
+          <p className="flex h-5/6 w-full items-center justify-center text-center text-lg text-white">
+            {props.projectPresentation}
+          </p>
+          <div className="flex w-full items-center justify-end gap-2">
+            <p className=" text-white">Voir plus</p>
+            <FontAwesomeIcon icon={faArrowRight} className="mt-1 text-white" />
+          </div>
         </div>
-      </a>
-    </div>
+        {/* </a> */}
+      </div>
+      <Modal open={openModal} onClose={() => setOpenModal(false)} />
+    </>
   );
 }

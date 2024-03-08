@@ -19,7 +19,7 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed left-0 top-0 z-50 w-full text-white ${transparency ? "bg-transparent" : "bg-gray-800"}`}
+      className={`fixed left-0 top-0 z-40 w-screen text-white ${transparency ? "bg-transparent" : "bg-gray-800"}`}
     >
       <div className=" container mx-auto px-4 py-4">
         <div className="flex h-8 items-center justify-end">

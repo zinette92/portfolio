@@ -4,7 +4,7 @@ import MyProjects from "../../data/projects.json";
 
 export default function Projects() {
   return (
-    <section id="projects" className="flex h-screen flex-col items-center py-4">
+    <section id="projects" className="flex h-screen flex-col items-center py-8">
       <h1 className="text-4xl font-bold">Mes Projets</h1>
       <div className="flex h-full w-full items-center justify-center gap-24">
         {MyProjects.map((data, index) => (
@@ -12,6 +12,7 @@ export default function Projects() {
             projectId={data.id}
             projectCover={data.cover}
             projectTitle={data.title}
+            projectPresentation={data.presentation}
             projectDescription={data.description}
             projectSkills={data.skills}
             projectLink={data.link}

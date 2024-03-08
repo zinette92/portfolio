@@ -3,15 +3,18 @@
     "id": "project1",
     "cover": "/assets/Projects/booki_cover.webp",
     "title": "Booki",
-    "presentation": "presentation",
-    "description": "Projet réalisé dans le cadre de ma formation.",
+    "presentation": "presentation du site de réservation en ligne booki. C'est un site où vous pouvez réserver des vacances de rêves! N'hésites plus et venez réserver.",
+    "description": [
+      "Projet réalisé dans le cadre de ma formation.",
+      "Projet réalisé dans le cadre de ma formation 2."
+    ],
     "skills": ["HTML", "CSS"],
     "link": "https://zinette92-booki.vercel.app/"
   },
   {
     "id": "project2",
     "cover": "/assets/Projects/kasa_cover.png",
-    "presentation": "presentation",
+    "presentation": "presentation du site de réservation en ligne booki. C'est un site où vous pouvez réserver des vacances de rêves! N'hésites plus et venez réserver.",
     "description": "Projet réalisé dans le cadre de ma formation.",
     "rating": "5",
     "skills": ["REACT", "Javascript", "SASS"],

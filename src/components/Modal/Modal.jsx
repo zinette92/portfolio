@@ -28,7 +28,7 @@ export default function Modal(props) {
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="fixed flex h-5/6 w-3/6 flex-col items-center gap-12 overflow-y-auto rounded bg-white px-3 pb-16 pt-2"
+        className="fixed flex h-5/6 w-3/6 flex-col items-center gap-12 overflow-y-auto rounded bg-white pb-3 pt-2 pt-3"
       >
         <FontAwesomeIcon
           icon={faXmark}
@@ -37,9 +37,9 @@ export default function Modal(props) {
         />
         <div className="flex w-full flex-col items-center">
           <h3 className="text-3xl font-bold text-blue-700">Booki</h3>
-          <hr className="border-b-1 mt-2  w-full border-gray-300" />
+          <hr className="border-b-1 mt-2  w-[80%] border-gray-300" />
         </div>
-        <div className="flex justify-center gap-4">
+        <div className="-mt-4 flex justify-center gap-4">
           <a
             href={props.code}
             className="flex h-10 w-40 items-center justify-center rounded-full border-2 border-black text-xl font-bold text-black hover:bg-black hover:text-white"
@@ -68,7 +68,7 @@ export default function Modal(props) {
             <p>Voir le site</p>
           </a>
         </div>
-        <div className="flex w-[550px] flex-col items-center gap-4">
+        <div className="-mt-4 flex w-[550px] flex-col items-center gap-4">
           <div className="flex w-full items-center gap-2">
             <hr className="mt-1 w-full  border-b-2 border-blue-500" />
             <h4 className="min-w-36 text-center text-2xl font-bold">
@@ -121,7 +121,7 @@ export default function Modal(props) {
             <h4 className=" text-center text-2xl font-bold">Images</h4>
             <hr className="mt-1 w-full border-b-2 border-blue-500" />
           </div>
-          <div className="flex flex-wrap gap-8">
+          <div className="flex flex-wrap justify-center gap-8">
             {props.images.map((image, index) => (
               <img
                 src={process.env.PUBLIC_URL + image}
@@ -130,6 +130,9 @@ export default function Modal(props) {
                 key={index}
               ></img>
             ))}
+          </div>
+          <div className="mt-8 flex justify-center font-medium">
+            Réalisé en {props.date}
           </div>
         </div>
       </div>

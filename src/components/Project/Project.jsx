@@ -11,12 +11,11 @@ export default function Project(props) {
   return (
     <>
       <div
-        className="transform-gpu transition-transform hover:scale-105"
+        className="transform-gpu cursor-pointer transition-transform hover:scale-105"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         onClick={() => setOpenModal(true)}
       >
-        {/* <a href={`${props.projectLink}`} target="_blank" rel="noreferrer"> */}
         <img
           src={process.env.PUBLIC_URL + props.projectCover}
           alt={props.projectTitle}
@@ -34,9 +33,16 @@ export default function Project(props) {
             <FontAwesomeIcon icon={faArrowRight} className="mt-1 text-white" />
           </div>
         </div>
-        {/* </a> */}
       </div>
-      <Modal open={openModal} onClose={() => setOpenModal(false)} />
+      <Modal
+        description={props.projectDescription}
+        skills={props.projectSkills}
+        code={props.projectCode}
+        site={props.projectSite}
+        images={props.projectImages}
+        open={openModal}
+        onClose={() => setOpenModal(false)}
+      />
     </>
   );
 }

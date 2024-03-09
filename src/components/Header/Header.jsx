@@ -5,7 +5,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 export default function Header() {
   const [transparency, setTransparency] = useState(true);
   const changeTransparency = () => {
-    if (window.scrollY >= 440) {
+    if (window.scrollY >= 630) {
       setTransparency(false);
     } else {
       setTransparency(true);
@@ -51,12 +51,26 @@ export default function Header() {
                   </Link>
                 </li>
                 <li>
-                  <Link to="about" className="hover:text-gray-300">
+                  <Link
+                    activeClass="active"
+                    to="about"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    offset={-56}
+                  >
                     A propos
                   </Link>
                 </li>
                 <li>
-                  <Link to="contact" className="hover:text-gray-300">
+                  <Link
+                    activeClass="active"
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    offset={-56}
+                  >
                     Contact
                   </Link>
                 </li>

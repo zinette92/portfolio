@@ -15,7 +15,9 @@ export default function Projects() {
             projectPresentation={data.presentation}
             projectDescription={data.description}
             projectSkills={data.skills}
-            projectLink={data.link}
+            projectCode={data.linkCode}
+            projectSite={data.linkSite}
+            projectImages={data.images}
             key={index}
           />
         ))}

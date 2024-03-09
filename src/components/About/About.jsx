@@ -2,9 +2,9 @@ import React from "react";
 
 export default function About() {
   return (
-    <section id="about" className="flex flex-col items-center gap-8 py-8">
+    <section id="about" className="flex flex-col items-center gap-12 py-8">
       <h2 className="text-4xl font-bold">À propos</h2>
-      <div className="flex w-full  flex-col items-center justify-center gap-4">
+      <div className="flex w-full  max-w-[80%] flex-col items-center justify-center gap-4">
         <p className="text-center">
           On sait depuis longtemps que travailler avec du texte lisible et
           contenant du sens est source de distractions, et empêche de se

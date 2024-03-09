@@ -9,8 +9,9 @@ export default function Intro(props) {
     >
       <div className="flex flex-col items-center justify-center gap-12">
         <div className="flex flex-col items-center justify-center gap-2">
-          <h1 className="text-6xl text-white">Gasmi Yassine</h1>
-          <p className="text-6xl text-white">Développeur web</p>
+          <h1 className="text-center text-6xl text-white">
+            Gasmi Yassine <br /> Développeur web
+          </h1>
         </div>
         <div>
           <a

@@ -1,0 +1,21 @@
+[
+  {
+    "frontend": [
+      "HTML",
+      "HTML",
+      "HTML",
+      "HTML",
+      "HTML",
+      "HTML",
+      "HTML",
+      "HTML",
+      "HTML",
+      "HTML",
+      "HTML",
+      "HTML"
+    ],
+    "backend": ["HTML", "HTML"],
+    "database": ["HTML"],
+    "tools": ["HTML", "HTML"]
+  }
+]

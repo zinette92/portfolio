@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from "react";
 
 export default function Footer() {
@@ -30,7 +31,9 @@ export default function Footer() {
           />
         </a>
       </div>
-      <div className="text-xl text-white">Réalisé par Gasmi Yassine</div>
+      <div className="md:text-xm text-xs text-white">
+        © 2024 Gasmi Yassine, Tous droits réservés.
+      </div>
     </section>
   );
 }

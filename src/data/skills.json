@@ -14,8 +14,8 @@
       "HTML",
       "HTML"
     ],
-    "backend": ["HTML", "HTML"],
+    "backend": ["HTML", "HTML", "HTML"],
     "database": ["HTML"],
-    "tools": ["HTML", "HTML"]
+    "tools": ["HTML", "HTML", "HTML", "HTML", "HTML", "HTML", "HTML"]
   }
 ]

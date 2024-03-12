@@ -26,9 +26,9 @@ export default function Header() {
           <div className="mr-10 hidden md:block">
             <nav>
               <ul className="flex space-x-8">
-                <li>
+                <li className="cursor-pointer">
                   <Link
-                    activeClass="active"
+                    activeClass="text-blue-500"
                     to="projects"
                     spy={true}
                     smooth={true}
@@ -38,9 +38,9 @@ export default function Header() {
                     Projets
                   </Link>
                 </li>
-                <li>
+                <li className="cursor-pointer">
                   <Link
-                    activeClass="active"
+                    activeClass="text-blue-500"
                     to="skills"
                     spy={true}
                     smooth={true}
@@ -50,9 +50,9 @@ export default function Header() {
                     Compétences
                   </Link>
                 </li>
-                <li>
+                <li className="cursor-pointer">
                   <Link
-                    activeClass="active"
+                    activeClass="text-blue-500"
                     to="about"
                     spy={true}
                     smooth={true}
@@ -62,9 +62,9 @@ export default function Header() {
                     A propos
                   </Link>
                 </li>
-                <li>
+                <li className="cursor-pointer">
                   <Link
-                    activeClass="active"
+                    activeClass="text-blue-500"
                     to="contact"
                     spy={true}
                     smooth={true}
@@ -78,7 +78,7 @@ export default function Header() {
             </nav>
           </div>
           <div className="md:hidden">
-            <button className="block text-gray-200 hover:text-white focus:text-white focus:outline-none">
+            <button className=" block text-red-700 hover:text-white focus:text-white focus:outline-none">
               <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
                 <path d="M4 6h16M4 12h16M4 18h16"></path>
               </svg>

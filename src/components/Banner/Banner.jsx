@@ -9,7 +9,7 @@ export default function Intro(props) {
     >
       <div className="flex flex-col items-center justify-center gap-12">
         <div className="flex flex-col items-center justify-center gap-2">
-          <h1 className="text-center text-6xl text-white">
+          <h1 className="text-center text-2xl text-white lg:text-6xl">
             Gasmi Yassine <br /> Développeur web
           </h1>
         </div>

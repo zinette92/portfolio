@@ -11,7 +11,7 @@ export default function Project(props) {
   return (
     <>
       <div
-        className="transform-gpu cursor-pointer transition-transform hover:scale-105"
+        className="h-96 transform-gpu cursor-pointer transition-transform hover:scale-105"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         onClick={() => setOpenModal(true)}
@@ -19,7 +19,7 @@ export default function Project(props) {
         <img
           src={process.env.PUBLIC_URL + props.projectCover}
           alt={props.projectTitle}
-          className="h-96 w-96 rounded object-cover shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]"
+          className="h-full w-full rounded object-cover shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]"
         />
         <div
           className={`${isHovered ? "visible" : "hidden"} absolute inset-0 flex flex-col items-center rounded bg-blue-700 bg-opacity-90  px-4 py-4 transition-opacity`}

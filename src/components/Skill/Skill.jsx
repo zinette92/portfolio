@@ -2,9 +2,9 @@ import React from "react";
 
 export default function Skill(props) {
   return (
-    <div className="flex h-24 w-32 transform flex-col items-center  justify-around shadow-[0_3px_10px_rgb(0,0,0,0.2)] transition-transform hover:scale-110">
+    <div className="flex h-full w-full transform flex-col items-center justify-around">
       <img
-        className="h-8 w-8"
+        className="w-[22%] min-w-4 max-w-12"
         src={process.env.PUBLIC_URL + "/assets/Icons/" + props.skill + ".png"}
         alt={`Logo ${props.skill}`}
       ></img>

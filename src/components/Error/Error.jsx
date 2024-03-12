@@ -16,6 +16,7 @@ export default function Error() {
         >
           Revenir au site
         </Link>
+        <p className="text-xs text-gray-500">Image de storyset sur Freepik</p>
       </div>
     </section>
   );

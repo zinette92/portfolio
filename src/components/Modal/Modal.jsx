@@ -28,18 +28,26 @@ export default function Modal(props) {
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="fixed flex h-5/6 w-3/6 flex-col items-center gap-12 overflow-y-auto rounded bg-white pb-3 pt-2 pt-3"
+        className="fixed flex h-5/6 w-5/6 flex-col items-center gap-12 overflow-y-auto rounded bg-white pb-3 pt-2 pt-3 lg:w-3/6"
       >
         <FontAwesomeIcon
           icon={faXmark}
           className="absolute right-0 top-0 mr-3 mt-3 h-6 w-6 cursor-pointer rounded-full p-1 text-black transition-colors duration-300 hover:bg-gray-200"
           onClick={props.onClose}
         />
+
+        {/* Project title */}
         <div className="flex w-full flex-col items-center">
-          <h3 className="text-3xl font-bold text-blue-700">Booki</h3>
+          <h3 className="text-2xl font-bold text-blue-700 lg:text-3xl">
+            Booki
+          </h3>
           <hr className="border-b-1 mt-2  w-[80%] border-gray-300" />
         </div>
-        <div className="-mt-4 flex justify-center gap-4">
+
+        {/* Project links */}
+
+        <div className="-mt-4 flex flex-col justify-center gap-4 md:flex-row">
+          {/* Github link */}
           <a
             href={props.code}
             className="flex h-10 w-40 items-center justify-center rounded-full border-2 border-black text-xl font-bold text-black hover:bg-black hover:text-white"
@@ -53,6 +61,7 @@ export default function Modal(props) {
             <p>Voir le code</p>
           </a>
 
+          {/* Website link */}
           <a
             href={props.site}
             className="flex h-10 w-40 items-center justify-center rounded-full border-2 border-blue-500 text-xl font-bold text-blue-500 hover:bg-blue-500 hover:text-white"
@@ -68,17 +77,17 @@ export default function Modal(props) {
             <p>Voir le site</p>
           </a>
         </div>
-        <div className="-mt-4 flex w-[550px] flex-col items-center gap-4">
-          <div className="flex w-full items-center gap-2">
-            <hr className="mt-1 w-full  border-b-2 border-blue-500" />
-            <h4 className="min-w-36 text-center text-2xl font-bold">
-              Description
-            </h4>
-            <hr className="mt-1 w-full border-b-2 border-blue-500" />
+
+        {/* Project description */}
+        <div className="-mt-4 flex w-[80%] flex-col items-center gap-4">
+          <div className="flex w-full flex-col items-center gap-2 md:flex-row">
+            <hr className="mt-1 hidden w-full  border-b-2 border-blue-500 md:inline" />
+            <h4 className="text-center text-2xl font-bold">Description</h4>
+            <hr className="mt-1 w-12 border-b-4 border-blue-500 md:w-full md:border-b-2" />
           </div>
           <div className="flex flex-col items-center gap-8">
             {props.description.map((paragraph, index) => (
-              <p className="text-center" key={index}>
+              <p className=" text-sm md:text-base" key={index}>
                 On sait depuis longtemps que travailler avec du texte lisible et
                 contenant du sens est source de distractions, et empêche de se
                 concentrer sur la mise en page elle-même. L'avantage du Lorem
@@ -97,36 +106,40 @@ export default function Modal(props) {
             ))}
           </div>
         </div>
-        <div className="flex w-[550px] flex-col items-center gap-4">
-          <div className="flex w-full items-center gap-2">
-            <hr className="mt-1 w-full border-b-2 border-blue-500" />
-            <h4 className="min-w-36 text-center text-2xl font-bold">
-              Technologies
-            </h4>
-            <hr className="mt-1 w-full border-b-2 border-blue-500" />
+        <div className="flex w-[80%] flex-col items-center gap-4">
+          <div className="flex w-full flex-col items-center gap-2 md:flex-row">
+            <hr className="mt-1 hidden w-full  border-b-2 border-blue-500 md:inline" />
+            <h4 className="text-center text-2xl font-bold">Technologies</h4>
+            <hr className="mt-1 w-12 border-b-4 border-blue-500 md:w-full md:border-b-2" />
           </div>
-          <div>
-            <ul className="mt-2 flex flex-wrap items-center justify-center gap-8">
+          <div className="w-full">
+            <ul className="grid w-full grid-cols-2 gap-4  md:grid-cols-4 ">
               {props.skills.map((skill, index) => (
-                <li key={index}>
+                <li
+                  key={index}
+                  className="h-24 flex-shrink-0 flex-grow-0 text-lg font-medium shadow-[0_3px_10px_rgb(0,0,0,0.2)] transition-transform hover:scale-110"
+                >
                   <Skill skill={skill} />
                 </li>
               ))}
             </ul>
           </div>
         </div>
-        <div className="flex w-[550px] flex-col items-center gap-4">
-          <div className="flex w-full items-center gap-2">
-            <hr className="mt-1 w-full border-b-2 border-blue-500" />
-            <h4 className=" text-center text-2xl font-bold">Images</h4>
-            <hr className="mt-1 w-full border-b-2 border-blue-500" />
+
+        {/* Project images */}
+
+        <div className="flex w-[80%] flex-col items-center gap-4">
+          <div className="flex w-full flex-col items-center gap-2 md:flex-row">
+            <hr className="mt-1 hidden w-full  border-b-2 border-blue-500 md:inline" />
+            <h4 className="text-center text-2xl font-bold">Images</h4>
+            <hr className="mt-1 w-12 border-b-4 border-blue-500 md:w-full md:border-b-2" />
           </div>
-          <div className="flex flex-wrap justify-center gap-8">
+          <div className="grid w-full grid-cols-1 justify-center gap-8 md:grid-cols-2">
             {props.images.map((image, index) => (
               <img
                 src={process.env.PUBLIC_URL + image}
                 alt="Image de présentation"
-                className="2/6 w-[28%] cursor-pointer shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
+                className="h-32 w-full cursor-pointer shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
                 key={index}
               ></img>
             ))}

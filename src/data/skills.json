@@ -1,21 +1,8 @@
 [
   {
-    "frontend": [
-      "HTML",
-      "HTML",
-      "HTML",
-      "HTML",
-      "HTML",
-      "HTML",
-      "HTML",
-      "HTML",
-      "HTML",
-      "HTML",
-      "HTML",
-      "HTML"
-    ],
-    "backend": ["HTML", "HTML", "HTML"],
-    "database": ["HTML"],
-    "tools": ["HTML", "HTML", "HTML", "HTML", "HTML", "HTML", "HTML"]
+    "frontend": ["HTML", "CSS", "JavaScript", "React.js", "Tailwind CSS"],
+    "backend": ["Node.js", "Express.js", "HTML"],
+    "database": ["MongoDB"],
+    "tools": ["Adobe Xd", "HTML", "HTML", "HTML", "HTML", "HTML", "HTML"]
   }
 ]

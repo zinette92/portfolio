@@ -1,3 +1,8 @@
+/* Apply Tailwind CSS base styles */
 @tailwind base;
+
+/* Include Tailwind CSS components */
 @tailwind components;
+
+/* Apply Tailwind CSS utility classes */
 @tailwind utilities;

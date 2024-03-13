@@ -11,51 +11,7 @@ export default function Skills() {
       <h2 className="text-4xl font-bold">Mes compétences</h2>
 
       <div className="flex w-[90%] flex-col items-center gap-8 md:items-start">
-        {/* <div className="flex w-fit flex-col justify-center gap-6 lg:justify-start">
-          <div className="flex flex-col items-center lg:items-start">
-            <h3 className="text-2xl font-semibold">Front-end</h3>
-            <hr className="mt-2 w-8  border-b-4 border-blue-500" />
-          </div>
-          <div className="flex w-full gap-4">
-            <ul className="flex flex-wrap justify-center gap-2 lg:justify-start lg:gap-8">
-              {MySkills[0].frontend.map((skill, index) => (
-                <li key={index}>
-                  <Skill skill={skill} />
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-        <div className="flex w-fit flex-col justify-center gap-6 lg:justify-start">
-          <div className="flex flex-col items-center lg:items-start">
-            <h3 className="text-2xl font-semibold">Back-end</h3>
-            <hr className="mt-2 w-8  border-b-4 border-yellow-500" />
-          </div>
-          <div className="flex w-full gap-4">
-            <ul className="flex flex-wrap justify-center gap-2 lg:justify-start lg:gap-8">
-              {MySkills[0].backend.map((skill, index) => (
-                <li key={index}>
-                  <Skill skill={skill} />
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-        <div className="flex w-fit flex-col justify-center gap-6 lg:justify-start">
-          <div className="flex flex-col items-center lg:items-start">
-            <h3 className="text-2xl font-semibold">Base de données</h3>
-            <hr className="mt-2 w-8  border-b-4 border-green-500" />
-          </div>
-          <div className="flex w-full justify-center gap-4">
-            <ul className="flex flex-wrap justify-center gap-2  lg:justify-start lg:gap-8">
-              {MySkills[0].database.map((skill, index) => (
-                <li key={index}>
-                  <Skill skill={skill} />
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div> */}
+        {/* Front-end skills */}
         <div className="flex w-full flex-col justify-center gap-6 lg:justify-start">
           <div className="flex flex-col items-center md:items-start">
             <h3 className="text-2xl font-semibold">Front-end</h3>
@@ -63,6 +19,7 @@ export default function Skills() {
           </div>
           <div>
             <ul className="box-border grid grid-cols-2 gap-4 md:grid-cols-4 lg:grid-cols-6">
+              {/* Mapping front-end skills */}
               {MySkills[0].frontend.map((skill, index) => (
                 <li
                   key={index}
@@ -74,7 +31,7 @@ export default function Skills() {
             </ul>
           </div>
         </div>
-
+        {/* Back-end skills */}
         <div className="flex w-full flex-col justify-center gap-6 lg:justify-start">
           <div className="flex flex-col items-center md:items-start">
             <h3 className="text-2xl font-semibold">Back-end</h3>
@@ -82,6 +39,7 @@ export default function Skills() {
           </div>
           <div>
             <ul className="box-border grid grid-cols-2 gap-4 md:grid-cols-4 lg:grid-cols-6">
+              {/* Mapping back-end skills */}
               {MySkills[0].backend.map((skill, index) => (
                 <li
                   key={index}
@@ -93,7 +51,7 @@ export default function Skills() {
             </ul>
           </div>
         </div>
-
+        {/* Database skills */}
         <div className="flex w-full flex-col justify-center gap-6 lg:justify-start">
           <div className="flex flex-col items-center md:items-start">
             <h3 className="text-2xl font-semibold">Base de données</h3>
@@ -101,6 +59,7 @@ export default function Skills() {
           </div>
           <div>
             <ul className="box-border grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
+              {/* Mapping database skills */}
               {MySkills[0].database.map((skill, index) => (
                 <li
                   key={index}
@@ -112,7 +71,7 @@ export default function Skills() {
             </ul>
           </div>
         </div>
-
+        {/* Tools skills */}
         <div className="flex w-full flex-col justify-center gap-6 lg:justify-start">
           <div className="flex flex-col items-center md:items-start">
             <h3 className="text-2xl font-semibold">Outils</h3>
@@ -120,6 +79,7 @@ export default function Skills() {
           </div>
           <div>
             <ul className="box-border grid grid-cols-2 gap-4 md:grid-cols-4 lg:grid-cols-6">
+              {/* Mapping tools skills */}
               {MySkills[0].tools.map((skill, index) => (
                 <li
                   key={index}

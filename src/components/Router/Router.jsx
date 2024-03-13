@@ -8,7 +8,9 @@ export default function Router() {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
+        {/* Route for the home page */}
         <Route index element={<Home />} />
+        {/* Route for handling any other undefined routes */}
         <Route path="*" element={<Error />} />
       </Route>
     </Routes>

@@ -1,5 +1,6 @@
 import React from "react";
 
+// About section component
 export default function About() {
   return (
     <section

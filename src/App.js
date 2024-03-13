@@ -3,11 +3,11 @@ import { useEffect } from "react";
 
 function App() {
   useEffect(() => {
-    // Rediriger vers la racine ("/") après le montage du composant
-    window.history.replaceState(null, '', '/');
+    window.history.replaceState(null, "", "/");
   }, []);
-  
+
   return (
+    //Render the Router component
     <div className="App">
       <Router />
     </div>

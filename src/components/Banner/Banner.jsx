@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 
+// Banner section component
 export default function Intro(props) {
   return (
     <section
@@ -13,6 +14,7 @@ export default function Intro(props) {
             Gasmi Yassine <br /> Développeur web
           </h1>
         </div>
+        {/* Button to download CV*/}
         <div>
           <a
             href="#"

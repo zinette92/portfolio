@@ -1,34 +1,41 @@
 import React, { useState } from "react";
 
+// Contact section component
 export default function Contact() {
+  // State variables for email, message, and button disabled state
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [isButtonDisabled, setIsButtonDisabled] = useState(true);
 
+  // Handle email input change
   const handleEmailChange = (event) => {
+    // Enable or disable button based on email validity and message content
     setEmail(event.target.value);
     setIsButtonDisabled(
       !isValidEmail(event.target.value) || message.trim() === "",
     );
   };
 
+  // Handle message input change
   const handleMessageChange = (event) => {
+    // Enable or disable button based on email validity and message content
     setMessage(event.target.value);
     setIsButtonDisabled(email === "" || event.target.value.trim() === "");
   };
-
+  // Handle form submission
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Faites quelque chose avec les données du formulaire, par exemple envoyer à un serveur
+    // Perform action with form data, e.g., send to a server
     console.log("Email:", email);
     console.log("Message:", message);
-    // Réinitialiser les champs après la soumission du formulaire
+    // Reset form fields after submission
     setEmail("");
     setMessage("");
-    // Désactiver le bouton après la soumission
+    // Disable button after submission
     setIsButtonDisabled(true);
   };
 
+  // Function to validate email format
   const isValidEmail = (email) => {
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailPattern.test(email);
@@ -48,8 +55,10 @@ export default function Contact() {
         </a>
         .
       </p>
+      {/* Contact form */}
       <div className="w-[80%] md:w-[65%] lg:w-[50%]">
         <form onSubmit={handleSubmit} className="space-y-6">
+          {/* Email input */}
           <div>
             <label htmlFor="email" className="ml-0.5 text-lg font-medium">
               Email
@@ -63,6 +72,7 @@ export default function Contact() {
               className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 focus:border-blue-500 focus:outline-none focus:ring"
             />
           </div>
+          {/* Message textarea */}
           <div>
             <label htmlFor="message" className="ml-0.5 text-lg font-medium">
               Message
@@ -76,6 +86,7 @@ export default function Contact() {
               rows="4"
             />
           </div>
+          {/* Submit form button */}
           <button
             type="submit"
             disabled={isButtonDisabled}

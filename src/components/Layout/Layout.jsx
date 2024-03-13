@@ -6,6 +6,7 @@ export default function Layout() {
   return (
     <>
       <main>
+        {/* Outlet for rendering child routes */}
         <Outlet />
       </main>
     </>

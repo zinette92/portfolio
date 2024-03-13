@@ -45,7 +45,6 @@ export default function Modal(props) {
         </div>
 
         {/* Project links */}
-
         <div className="-mt-4 flex flex-col justify-center gap-4 md:flex-row">
           {/* Github link */}
           <a
@@ -86,6 +85,7 @@ export default function Modal(props) {
             <hr className="mt-1 w-12 border-b-4 border-blue-500 md:w-full md:border-b-2" />
           </div>
           <div className="flex flex-col items-center gap-8">
+            {/* Mapping project description */}
             {props.description.map((paragraph, index) => (
               <p className=" text-sm md:text-base" key={index}>
                 On sait depuis longtemps que travailler avec du texte lisible et
@@ -114,6 +114,7 @@ export default function Modal(props) {
           </div>
           <div className="w-full">
             <ul className="grid w-full grid-cols-2 gap-4  md:grid-cols-4 ">
+              {/* Mapping project skills */}
               {props.skills.map((skill, index) => (
                 <li
                   key={index}
@@ -127,7 +128,6 @@ export default function Modal(props) {
         </div>
 
         {/* Project images */}
-
         <div className="flex w-[80%] flex-col items-center gap-4">
           <div className="flex w-full flex-col items-center gap-2 md:flex-row">
             <hr className="mt-1 hidden w-full  border-b-2 border-blue-500 md:inline" />
@@ -135,6 +135,7 @@ export default function Modal(props) {
             <hr className="mt-1 w-12 border-b-4 border-blue-500 md:w-full md:border-b-2" />
           </div>
           <div className="grid w-full grid-cols-1 justify-center gap-8 md:grid-cols-2">
+            {/* Mapping project images */}
             {props.images.map((image, index) => (
               <img
                 src={process.env.PUBLIC_URL + image}

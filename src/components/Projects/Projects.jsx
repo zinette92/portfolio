@@ -21,7 +21,6 @@ export default function Projects() {
             projectSkills={data.skills}
             projectCode={data.linkCode}
             projectSite={data.linkSite}
-            projectImages={data.images}
             projectDate={data.date}
             key={index}
           />

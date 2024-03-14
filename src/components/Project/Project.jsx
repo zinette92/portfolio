@@ -43,7 +43,6 @@ export default function Project(props) {
         skills={props.projectSkills}
         code={props.projectCode}
         site={props.projectSite}
-        images={props.projectImages}
         date={props.projectDate}
         open={openModal}
         onClose={() => setOpenModal(false)}

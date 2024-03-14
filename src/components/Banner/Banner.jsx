@@ -17,7 +17,8 @@ export default function Intro(props) {
         {/* Button to download CV*/}
         <div>
           <a
-            href="#"
+            href={`${process.env.PUBLIC_URL + "../assets/Cv/Gasmi-Yassine-CV.pdf"}`}
+            download="Gasmi-Yassine-CV.pdf"
             className="flex h-12 w-64 items-center justify-center rounded-full border-2 border-white text-2xl font-bold text-white hover:bg-white hover:text-black"
           >
             Mon CV

@@ -1,24 +1,14 @@
 [
   {
     "id": "project1",
-    "cover": "/assets/Projects/Mask Group 2 (2).webp",
+    "cover": "/assets/Projects/booki_cover.webp",
     "title": "Booki",
-    "presentation": "presentation du site de réservation en ligne booki. C'est un site où vous pouvez réserver des vacances de rêves! N'hésites plus et venez réserver.",
+    "presentation": "Site fictif d'une agence de voyage.",
     "description": [
       "Projet réalisé dans le cadre de ma formation.",
       "Projet réalisé dans le cadre de ma formation 2."
     ],
-    "skills": [
-      "HTML",
-      "HTML",
-      "HTML",
-      "HTML",
-      "HTML",
-      "HTML",
-      "HTML",
-      "HTML",
-      "HTML"
-    ],
+    "skills": ["HTML", "CSS"],
     "linkCode": "https://github.com/zinette92/Projet-2---Cr-ez-la-page-d-accueil-d-une-agence-de-voyage-avec-HTML---CSS",
     "linkSite": "https://zinette92-booki.vercel.app/",
     "images": [
@@ -30,20 +20,30 @@
   },
   {
     "id": "project2",
-    "cover": "/assets/Projects/kasa_cover.png",
-    "presentation": "presentation du site de réservation en ligne booki. C'est un site où vous pouvez réserver des vacances de rêves! N'hésites plus et venez réserver.",
-    "description": "Projet réalisé dans le cadre de ma formation.",
-    "rating": "5",
-    "skills": ["REACT", "Javascript", "SASS"],
-    "link": "https://zinette92-kasa.vercel.app/"
+    "cover": "/assets/Projects/kasa_cover.webp",
+    "title": "Kasa",
+    "presentation": "Application web affichant des annonces immobilières.",
+    "description": [
+      "Projet réalisé dans le cadre de ma formation.",
+      "Projet réalisé dans le cadre de ma formation 2."
+    ],
+    "skills": ["React.js", "CSS", "Javascript"],
+    "linkCode": "https://github.com/zinette92/Creez-une-application-web-de-location-immobiliere-avec-React",
+    "linkSite": "https://zinette92-kasa.vercel.app/",
+    "date": "Février 2023"
   },
   {
     "id": "project3",
-    "cover": "/assets/Projects/booki_cover.webp",
-    "presentation": "presentation",
-    "description": "Projet réalisé dans le cadre de ma formation.",
-    "rating": "5",
-    "skills": ["REACT", "Javascript", "SASS"],
-    "link": "https://zinette92-nina-carducci.vercel.app/"
+    "cover": "/assets/Projects/nina_carducci_cover.webp",
+    "title": "Nina Carducci",
+    "presentation": "Site vitrine d'une photographe professionelle.",
+    "description": [
+      "Projet réalisé dans le cadre de ma formation.",
+      "Projet réalisé dans le cadre de ma formation 2."
+    ],
+    "skills": ["HTML", "CSS"],
+    "linkCode": "https://github.com/zinette92/D-buggez-et-optimisez-un-site-de-photographe",
+    "linkSite": "https://zinette92-nina-carducci.vercel.app/",
+    "date": "Janvier 2023"
   }
 ]

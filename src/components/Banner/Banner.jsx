@@ -2,15 +2,15 @@
 import React from "react";
 
 // Banner section component
-export default function Intro(props) {
+export default function Intro() {
   return (
     <section
       id="banner"
-      className="flex h-screen items-center justify-center  bg-[url('../assets/Banner/image_banner.webp')] bg-cover bg-no-repeat"
+      className="flex h-screen items-center justify-center  bg-[url('../../public/assets/Banner/image_banner.webp')] bg-cover bg-no-repeat"
     >
       <div className="flex flex-col items-center justify-center gap-12">
         <div className="flex flex-col items-center justify-center gap-2">
-          <h1 className="text-center text-2xl text-white lg:text-6xl">
+          <h1 className="text-center text-4xl text-white lg:text-6xl">
             Gasmi Yassine <br /> Développeur web
           </h1>
         </div>

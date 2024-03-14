@@ -27,10 +27,10 @@ export default function Contact() {
     // setIsSubmitting(true);
     emailjs
       .sendForm(
-        "service_usf24j4",
-        "template_171p8fh",
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
         e.target,
-        "oPdVtFIkpopHlsudc",
+        process.env.REACT_APP_PUBLIC_KEY,
       )
       .then(
         (result) => {
@@ -82,7 +82,7 @@ export default function Contact() {
       <div
         className={`flex h-full flex-col items-center gap-12 bg-gray-100 py-16 pt-8  ${isMessageSent ? "hidden" : "block"}`}
       >
-        <h2 className="text-4xl font-bold">Me contacter</h2>
+        <h2 className="text-4xl font-bold text-gray-700">Me contacter</h2>
         <p className="max-w-[90%] text-center">
           Si vous souhaitez me contacter, veuillez remplir le formulaire
           ci-dessous ou m'envoyer un{" "}

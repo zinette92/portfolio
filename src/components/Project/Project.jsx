@@ -27,7 +27,9 @@ export default function Project(props) {
         <div
           className={`${isHovered ? "visible" : "hidden"} absolute inset-0 flex flex-col items-center rounded bg-blue-700 bg-opacity-90  px-4 py-4 transition-opacity`}
         >
-          <h3 className="mb-2 text-2xl font-bold text-white">Booki</h3>
+          <h3 className="mb-2 text-2xl font-bold text-white">
+            {props.projectTitle}
+          </h3>
           <p className="flex h-5/6 w-full items-center justify-center text-center text-lg text-white">
             {props.projectPresentation}
           </p>
@@ -39,6 +41,7 @@ export default function Project(props) {
       </div>
       {/* Modal for detailed project view */}
       <Modal
+        title={props.projectTitle}
         description={props.projectDescription}
         skills={props.projectSkills}
         code={props.projectCode}

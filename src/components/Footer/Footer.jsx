@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <section
       id="footer"
-      className="flex h-32 flex-col items-center justify-center gap-4 bg-blue-300"
+      className="flex h-32 flex-col items-center justify-center gap-4 bg-gray-700"
     >
       {/* Github and Linkedin buttons */}
       <div className="flex gap-8">
@@ -33,7 +33,7 @@ export default function Footer() {
         </a>
       </div>
       {/* Copyright */}
-      <div className="md:text-xm text-xs text-white">
+      <div className="text-sm text-white md:text-base">
         © 2024 Gasmi Yassine, Tous droits réservés.
       </div>
     </section>

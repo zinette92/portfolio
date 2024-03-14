@@ -6,7 +6,7 @@ export default function Intro() {
   return (
     <section
       id="banner"
-      className="flex h-screen items-center justify-center  bg-[url('../../public/assets/Banner/image_banner.webp')] bg-cover bg-no-repeat"
+      className="flex h-screen items-center justify-center bg-[url('../../public/assets/Banner/image_banner.webp')]  bg-cover bg-no-repeat caret-transparent"
     >
       <div className="flex flex-col items-center justify-center gap-12">
         <div className="flex flex-col items-center justify-center gap-2">

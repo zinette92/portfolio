@@ -3,7 +3,10 @@ import { Link } from "react-router-dom";
 
 export default function Error() {
   return (
-    <section id="error" className="flex h-screen items-center justify-center">
+    <section
+      id="error"
+      className="flex h-screen items-center justify-center caret-transparent"
+    >
       <div className="flex h-[80%] flex-col items-center justify-around">
         {/* Error illustration */}
         <img

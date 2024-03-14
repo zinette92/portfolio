@@ -12,7 +12,7 @@ export default function Project(props) {
     <>
       {/* Project card */}
       <div
-        className="h-96 transform-gpu cursor-pointer transition-transform hover:scale-105"
+        className="h-96 transform-gpu cursor-pointer caret-transparent transition-transform hover:scale-105"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         onClick={() => setOpenModal(true)}

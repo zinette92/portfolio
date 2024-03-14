@@ -24,7 +24,7 @@ export default function Modal(props) {
   return (
     <div
       onClick={props.onClose}
-      className="fixed left-0 top-0 z-50 flex h-screen w-screen items-center justify-center overflow-hidden bg-black bg-opacity-50"
+      className="fixed left-0 top-0 z-50 flex h-screen w-screen items-center justify-center overflow-hidden bg-black bg-opacity-50 caret-transparent"
     >
       <div
         onClick={(e) => e.stopPropagation()}

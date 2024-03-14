@@ -5,7 +5,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="flex h-fit flex-col items-center justify-center gap-12 pb-16 pt-8"
+      className="flex h-fit flex-col items-center justify-center gap-12 pb-16 pt-8 caret-transparent"
     >
       <h2 className="text-4xl font-bold text-gray-700">À propos</h2>
       <div className="flex max-w-[90%]  flex-col items-center justify-center gap-10 md:max-w-[80%] ">

@@ -6,7 +6,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="flex h-fit flex-col items-center gap-12 bg-gray-100 pb-12 pt-8"
+      className="flex h-fit flex-col items-center gap-12 bg-gray-100 pb-12 pt-8 caret-transparent"
     >
       <h2 className="text-4xl font-bold text-gray-700">Mes compétences</h2>
 

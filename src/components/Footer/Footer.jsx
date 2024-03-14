@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <section
       id="footer"
-      className="flex h-32 flex-col items-center justify-center gap-4 bg-gray-700"
+      className="flex h-32 flex-col items-center justify-center gap-4 bg-gray-700 caret-transparent"
     >
       {/* Github and Linkedin buttons */}
       <div className="flex gap-8">

@@ -61,7 +61,7 @@ export default function Header() {
   return (
     <>
       <header
-        className={`fixed left-0 top-0 z-40 w-screen text-white ${transparency ? "bg-gray-700 md:bg-transparent" : "bg-gray-700"}`}
+        className={`fixed left-0 top-0 z-40 w-screen text-white caret-transparent ${transparency ? "bg-gray-700 md:bg-transparent" : "bg-gray-700"}`}
       >
         <div className="container mx-auto flex flex-col items-center justify-between px-4 py-4 md:flex-row">
           {/* Logo */}

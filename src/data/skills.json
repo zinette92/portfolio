@@ -1,8 +1,8 @@
 [
   {
     "frontend": ["HTML", "CSS", "JavaScript", "React.js", "Tailwind CSS"],
-    "backend": ["Node.js", "Express.js", "HTML"],
+    "backend": ["Node.js", "Express.js"],
     "database": ["MongoDB"],
-    "tools": ["Adobe Xd", "HTML", "HTML", "HTML", "HTML", "HTML", "HTML"]
+    "tools": ["Adobe Xd", "Figma"]
   }
 ]

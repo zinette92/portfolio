@@ -113,7 +113,7 @@ export default function Modal(props) {
             <hr className="mt-1 w-12 border-b-4 border-blue-500 md:w-full md:border-b-2" />
           </div>
           <div className="w-full">
-            <ul className="grid w-full grid-cols-2 gap-4  md:grid-cols-4 ">
+            <ul className="grid w-full grid-cols-2 gap-4 md:grid-cols-4 ">
               {/* Mapping project skills */}
               {props.skills.map((skill, index) => (
                 <li
@@ -126,28 +126,9 @@ export default function Modal(props) {
             </ul>
           </div>
         </div>
-
-        {/* Project images */}
-        <div className="flex w-[80%] flex-col items-center gap-4">
-          <div className="flex w-full flex-col items-center gap-2 md:flex-row">
-            <hr className="mt-1 hidden w-full  border-b-2 border-blue-500 md:inline" />
-            <h4 className="text-center text-2xl font-bold">Images</h4>
-            <hr className="mt-1 w-12 border-b-4 border-blue-500 md:w-full md:border-b-2" />
-          </div>
-          <div className="grid w-full grid-cols-1 justify-center gap-8 md:grid-cols-2">
-            {/* Mapping project images */}
-            {props.images.map((image, index) => (
-              <img
-                src={process.env.PUBLIC_URL + image}
-                alt="Image de présentation"
-                className="h-32 w-full cursor-pointer shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
-                key={index}
-              ></img>
-            ))}
-          </div>
-          <div className="mt-8 flex justify-center font-medium">
-            Réalisé en {props.date}
-          </div>
+        {/* Project date */}
+        <div className="flex justify-center font-medium text-blue-800">
+          Réalisé en {props.date}
         </div>
       </div>
     </div>

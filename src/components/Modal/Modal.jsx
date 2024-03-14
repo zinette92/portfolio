@@ -28,7 +28,7 @@ export default function Modal(props) {
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="fixed flex h-5/6 w-5/6 flex-col items-center gap-12 overflow-y-auto rounded bg-white pb-3 pt-2 pt-3 lg:w-3/6"
+        className="fixed flex h-5/6 w-5/6 flex-col items-center gap-6 overflow-y-auto rounded bg-white pb-3 pt-2 pt-3 lg:w-3/6"
       >
         <FontAwesomeIcon
           icon={faXmark}
@@ -37,15 +37,15 @@ export default function Modal(props) {
         />
 
         {/* Project title */}
-        <div className="flex w-full flex-col items-center">
+        <div className="flex w-full flex-col items-center gap-2">
           <h3 className="text-2xl font-bold text-blue-700 lg:text-3xl">
-            Booki
+            {props.title}
           </h3>
-          <hr className="border-b-1 mt-2  w-[80%] border-gray-300" />
+          <hr className="border-b-1  w-[80%] border-gray-300" />
         </div>
 
         {/* Project links */}
-        <div className="-mt-4 flex flex-col justify-center gap-4 md:flex-row">
+        <div className="mt-2 flex flex-col justify-center gap-4 md:flex-row">
           {/* Github link */}
           <a
             href={props.code}
@@ -78,34 +78,22 @@ export default function Modal(props) {
         </div>
 
         {/* Project description */}
-        <div className="-mt-4 flex w-[80%] flex-col items-center gap-4">
+        <div className="flex w-[80%] flex-col items-center gap-4">
           <div className="flex w-full flex-col items-center gap-2 md:flex-row">
             <hr className="mt-1 hidden w-full  border-b-2 border-blue-500 md:inline" />
             <h4 className="text-center text-2xl font-bold">Description</h4>
             <hr className="mt-1 w-12 border-b-4 border-blue-500 md:w-full md:border-b-2" />
           </div>
-          <div className="flex flex-col items-center gap-8">
+          <div className="flex flex-col gap-4">
             {/* Mapping project description */}
             {props.description.map((paragraph, index) => (
               <p className=" text-sm md:text-base" key={index}>
-                On sait depuis longtemps que travailler avec du texte lisible et
-                contenant du sens est source de distractions, et empêche de se
-                concentrer sur la mise en page elle-même. L'avantage du Lorem
-                Ipsum sur un texte générique comme 'Du texte. Du texte. Du
-                texte.' est qu'il possède une distribution de lettres plus ou
-                moins normale, et en tout cas comparable avec celle du français
-                standard. De nombreuses suites logicielles de mise en page ou
-                éditeurs de sites Web ont fait du Lorem Ipsum leur faux texte
-                par défaut, et une recherche pour 'Lorem Ipsum' vous conduira
-                vers de nombreux sites qui n'en sont encore qu'à leur phase de
-                construction. Plusieurs versions sont apparues avec le temps,
-                parfois par accident, souvent intentionnellement (histoire d'y
-                rajouter de petits clins d'oeil, voire des phrases
-                embarassantes).
+                {paragraph}
               </p>
             ))}
           </div>
         </div>
+        {/* Project skills */}
         <div className="flex w-[80%] flex-col items-center gap-4">
           <div className="flex w-full flex-col items-center gap-2 md:flex-row">
             <hr className="mt-1 hidden w-full  border-b-2 border-blue-500 md:inline" />
@@ -127,7 +115,7 @@ export default function Modal(props) {
           </div>
         </div>
         {/* Project date */}
-        <div className="flex justify-center font-medium text-blue-800">
+        <div className="mt-4 flex justify-center font-medium text-blue-700">
           Réalisé en {props.date}
         </div>
       </div>

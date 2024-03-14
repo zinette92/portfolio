@@ -8,7 +8,7 @@ export default function Skills() {
       id="skills"
       className="flex h-fit flex-col items-center gap-12 bg-gray-100 pb-12 pt-8"
     >
-      <h2 className="text-4xl font-bold">Mes compétences</h2>
+      <h2 className="text-4xl font-bold text-gray-700">Mes compétences</h2>
 
       <div className="flex w-[90%] flex-col items-center gap-8 md:items-start">
         {/* Front-end skills */}

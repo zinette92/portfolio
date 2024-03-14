@@ -8,7 +8,7 @@ export default function Projects() {
       id="projects"
       className="flex h-fit flex-col items-center gap-12 pb-16 pt-8 lg:h-fit lg:min-h-screen "
     >
-      <h2 className="text-4xl font-bold">Mes projets</h2>
+      <h2 className="text-4xl font-bold text-gray-700">Mes projets</h2>
       <div className="grid w-[90%] flex-grow grid-cols-1 items-center  gap-12 md:grid-cols-2 lg:grid-cols-3 lg:gap-24">
         {/* Mapping projects data */}
         {MyProjects.map((data, index) => (

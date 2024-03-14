@@ -5,8 +5,10 @@
     "title": "Booki",
     "presentation": "Site fictif d'une agence de voyage.",
     "description": [
-      "Projet réalisé dans le cadre de ma formation.",
-      "Projet réalisé dans le cadre de ma formation 2."
+      "Ce projet a été réalisé dans le cadre de ma formation de développeur web.",
+      "Dans ce projet, j'ai créé la page d'accueil d'une agence de voyage en utilisant HTML et CSS. Ma mission principale était d'intégrer l'interface responsive du site, en prenant en compte les maquettes Figma pour mobile, tablette et desktop, ainsi que les images et les spécificités du projet fournies dans une note de synthèse",
+      "L'une des principales difficultés auxquelles j'ai été confronté était d'assurer que l'interface soit réactive et fonctionne de manière optimale sur tous les appareils et tailles d'écran. Pour surmonter cette problématique, j'ai dû ajuster minutieusement les styles CSS en utilisant les media queries pour chaque résolution cible, tout en veillant à ce que le contenu reste lisible et esthétique sur toutes les plateformes.",
+      "En travaillant sur ce projet, j'ai développé des compétences essentielles en design responsive. Cela m'a permis d'apprendre à créer des interfaces web qui s'adaptent de manière fluide et élégante à différents dispositifs, assurant ainsi une expérience utilisateur cohérente et agréable. Cette expérience m'a également permis d'améliorer ma compréhension des bonnes pratiques en matière d'intégration web, renforçant ainsi mes compétences en HTML et CSS."
     ],
     "skills": ["HTML", "CSS"],
     "linkCode": "https://github.com/zinette92/Projet-2---Cr-ez-la-page-d-accueil-d-une-agence-de-voyage-avec-HTML---CSS",
@@ -24,13 +26,15 @@
     "title": "Kasa",
     "presentation": "Application web affichant des annonces immobilières.",
     "description": [
-      "Projet réalisé dans le cadre de ma formation.",
-      "Projet réalisé dans le cadre de ma formation 2."
+      "Ce projet a été réalisé dans le cadre de ma formation de développeur web.",
+      "Dans ce projet, j'ai implémenté le front-end d'une application en utilisant React et React Router afin de créer une expérience utilisateur moderne et réactive. Mon travail s'est concentré sur la logique de présentation des données et sur la création de composants React pour construire une interface utilisateur intuitive. J'ai également utilisé React Router pour configurer la navigation entre les différentes pages de l'application, ce qui m'a permis de mieux comprendre la gestion du routage dans une application web moderne.",
+      "L'un des défis auxquels j'ai été confronté était de garantir la cohérence de l'interface et la fluidité de la navigation entre les différentes pages. Pour résoudre cela, j'ai dû organiser efficacement la structure des composants React et configurer les routes avec React Router de manière à ce que l'utilisateur puisse naviguer de manière fluide dans l'application.",
+      "Ce projet m'a permis de maîtriser React et React Router, des technologies essentielles dans le développement web moderne. En travaillant sur la logique de présentation des données et la création de composants React, j'ai amélioré ma compréhension de la construction d'interfaces utilisateur dynamiques et réactives. De plus, l'utilisation de SASS pour gérer le CSS et l'implémentation d'animations CSS m'ont permis d'ajouter des éléments visuels attrayants à l'application, renforçant ainsi mes compétences en conception front-end."
     ],
     "skills": ["React.js", "CSS", "Javascript"],
     "linkCode": "https://github.com/zinette92/Creez-une-application-web-de-location-immobiliere-avec-React",
     "linkSite": "https://zinette92-kasa.vercel.app/",
-    "date": "Février 2023"
+    "date": "Février 2024"
   },
   {
     "id": "project3",
@@ -38,12 +42,14 @@
     "title": "Nina Carducci",
     "presentation": "Site vitrine d'une photographe professionelle.",
     "description": [
-      "Projet réalisé dans le cadre de ma formation.",
-      "Projet réalisé dans le cadre de ma formation 2."
+      "Ce projet a été réalisé dans le cadre de ma formation de développeur web.",
+      "J'ai travaillé sur l'optimisation du référencement d'un site web en améliorant sa performance et son accessibilité. Ma première tâche a été d'utiliser des outils tels que Lighthouse, Wave et les DevTools Chrome pour évaluer les performances et l'accessibilité du site, puis de proposer des recommandations pour améliorer la vitesse de chargement, la structure du code et le référencement. Ensuite, j'ai appliqué ces recommandations en modifiant le code du site, avec pour objectif d'améliorer ses performances et son accessibilité pour un meilleur référencement sur les moteurs de recherche. Enfin, j'ai créé un rapport détaillé illustrant les résultats avant et après les modifications, comprenant des captures d'écran des audits et des explications sur les changements apportés et leur impact sur le référencement et l'accessibilité du site.",
+      "L'un des défis majeurs de ce projet a été d'identifier efficacement les problèmes de performance et d'accessibilité du site. Pour y remédier, j'ai utilisé des outils spécialisés et les DevTools Chrome pour mener une analyse approfondie du code, ce qui m'a permis de cibler les zones nécessitant des améliorations. Ensuite, j'ai élaboré des recommandations spécifiques et les ai mises en œuvre de manière stratégique pour résoudre ces problèmes et optimiser le référencement du site.",
+      "Ce projet m'a permis de développer des compétences essentielles en optimisation du référencement (SEO) et en amélioration de l'accessibilité des sites web. En analysant les performances du site et en proposant des solutions pour les optimiser, j'ai renforcé ma compréhension des meilleures pratiques en matière de SEO et d'accessibilité. De plus, la création d'un rapport détaillé m'a permis d'améliorer mes compétences en communication, en présentant clairement les résultats des audits et les actions prises pour améliorer le site."
     ],
     "skills": ["HTML", "CSS"],
     "linkCode": "https://github.com/zinette92/D-buggez-et-optimisez-un-site-de-photographe",
     "linkSite": "https://zinette92-nina-carducci.vercel.app/",
-    "date": "Janvier 2023"
+    "date": "Janvier 2024"
   }
 ]

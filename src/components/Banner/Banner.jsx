@@ -18,7 +18,8 @@ export default function Intro() {
         <div>
           <a
             href={`${process.env.PUBLIC_URL + "../assets/Cv/Gasmi-Yassine-CV.pdf"}`}
-            download="Gasmi-Yassine-CV.pdf"
+            target="_blank"
+            rel="noreferrer"
             className="flex h-12 w-64 items-center justify-center rounded-full border-2 border-white text-2xl font-bold text-white hover:bg-white hover:text-black"
           >
             Mon CV

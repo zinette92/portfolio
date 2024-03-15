@@ -5,21 +5,12 @@ import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
 // Contact section component
 export default function Contact() {
-  // State variables for email, message, and button disabled state
+  // State variables
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [isMessageSent, setIsMessageSent] = useState(false);
   const [isButtonDisabled, setIsButtonDisabled] = useState(true);
   const [isError, setIsError] = useState(false);
-
-  // Handle email input change
-  const handleEmailChange = (event) => {
-    // Enable or disable button based on email validity and message content
-    setEmail(event.target.value);
-    setIsButtonDisabled(
-      !isValidEmail(event.target.value) || message.trim() === "",
-    );
-  };
 
   const sendEmail = (e) => {
     e.persist();
@@ -33,40 +24,43 @@ export default function Contact() {
         process.env.REACT_APP_PUBLIC_KEY,
       )
       .then(
-        (result) => {
-          console.log("Email:", email);
-          console.log("Email:", message);
+        () => {
           // Reset form fields after submission
           setEmail("");
           setMessage("");
           // Disable button after submission
           setIsButtonDisabled(true);
-
+          //Sending a confirmation message
           setIsMessageSent(true);
-
           setTimeout(() => {
             setIsMessageSent(false);
-          }, 3000); // hide message after 5 seconds
+          }, 2000); // hide message after 3 seconds
         },
         (error) => {
-          console.log(
-            "Une erreur est survenue lors de l'envoie du message." || error,
-          );
+          console.log("An error occurred while sending the message." || error);
+          //Sending an error message
           setIsError(true);
           setTimeout(() => {
             setIsError(false);
-          }, 2000);
+          }, 2000); // hide message after 2 seconds
         },
       );
-
     // Clears the form after sending the email
     e.target.reset();
+  };
+
+  // Handle email input change
+  const handleEmailChange = (event) => {
+    // Enable or disable button based on email validity and message content
+    setEmail(event.target.value);
+    setIsButtonDisabled(
+      !isValidEmail(event.target.value) || message.trim() === "",
+    );
   };
 
   // Handle message input change
   const handleMessageChange = (event) => {
     // Enable or disable button based on email validity and message content
-    console.log("a");
     setMessage(event.target.value);
     setIsButtonDisabled(email === "" || event.target.value.trim() === "");
   };

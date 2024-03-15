@@ -13,6 +13,7 @@ export default function Header() {
       const scrollPosition = window.scrollY;
       const projectsSectionPosition = projectsSection.offsetTop;
 
+      //Header is visible only below the projects section
       if (scrollPosition >= projectsSectionPosition - 60) {
         setTransparency(false);
       } else {
@@ -95,7 +96,7 @@ export default function Header() {
             className={`mt-4 w-full flex-grow items-center justify-start md:mt-0 md:flex md:justify-end ${showMenu ? "block h-screen" : "hidden"}`}
           >
             <hr
-              className={`border-b-1 mt-1  w-[80%] w-full border-white ${showMenu ? "block" : "hidden"}`}
+              className={`border-b-1 mt-1 w-full border-white ${showMenu ? "block" : "hidden"}`}
             />
             {/* Menu items */}
             <ul className="mt-3 flex flex-col space-y-4 md:mr-10 md:mt-0 md:flex-row md:space-x-8 md:space-y-0">

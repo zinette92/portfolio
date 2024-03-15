@@ -12,7 +12,7 @@ export default function Project(props) {
     <>
       {/* Project card */}
       <div
-        className="h-96 transform-gpu cursor-pointer caret-transparent transition-transform hover:scale-105"
+        className="h-96 cursor-pointer caret-transparent lg:transform-gpu lg:transition-transform lg:hover:scale-105"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         onClick={() => setOpenModal(true)}
@@ -25,7 +25,7 @@ export default function Project(props) {
         />
         {/* Project details on hover */}
         <div
-          className={`${isHovered ? "visible" : "hidden"} absolute inset-0 flex flex-col items-center rounded bg-blue-700 bg-opacity-90  px-4 py-4 transition-opacity`}
+          className={`${isHovered ? "lg:visible lg:bg-opacity-90" : "hidden"} absolute inset-0 flex flex-col items-center rounded bg-blue-700 px-4 py-4 transition-opacity`}
         >
           <h3 className="mb-2 text-2xl font-bold text-white">
             {props.projectTitle}
@@ -39,7 +39,7 @@ export default function Project(props) {
           </div>
         </div>
       </div>
-      {/* Modal for detailed project view */}
+      {/* Modal to detailed project view */}
       <Modal
         title={props.projectTitle}
         description={props.projectDescription}

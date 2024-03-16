@@ -31,7 +31,7 @@
       "L'un des défis auxquels j'ai été confronté était de garantir la cohérence de l'interface et la fluidité de la navigation entre les différentes pages. Pour résoudre cela, j'ai dû organiser efficacement la structure des composants React et configurer les routes avec React Router de manière à ce que l'utilisateur puisse naviguer de manière fluide dans l'application.",
       "Ce projet m'a permis de maîtriser React et React Router, des technologies essentielles dans le développement web moderne. En travaillant sur la logique de présentation des données et la création de composants React, j'ai amélioré ma compréhension de la construction d'interfaces utilisateur dynamiques et réactives. De plus, l'utilisation de SASS pour gérer le CSS et l'implémentation d'animations CSS m'ont permis d'ajouter des éléments visuels attrayants à l'application, renforçant ainsi mes compétences en conception front-end."
     ],
-    "skills": ["React.js", "CSS", "Javascript"],
+    "skills": ["React.js", "CSS", "JavaScript"],
     "linkCode": "https://github.com/zinette92/Creez-une-application-web-de-location-immobiliere-avec-React",
     "linkSite": "https://zinette92-kasa.vercel.app/",
     "date": "Février 2024"
